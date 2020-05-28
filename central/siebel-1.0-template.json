@@ -3,7 +3,7 @@
   "description": "<p>This is the first version of the <b>SIEBEL CRM</b> correlation's recorder rules</p> <p>It contains some of the most used Correlations for the platform.</p>",
   "version": "1.0",
   "components": "com.blazemeter.jmeter.correlation.siebel.SiebelCounterCorrelationReplacement,\ncom.blazemeter.jmeter.correlation.siebel.SiebelRowCorrelationExtractor,\ncom.blazemeter.jmeter.correlation.siebel.SiebelRowIdCorrelationReplacement,\ncom.blazemeter.jmeter.correlation.siebel.SiebelRowParamsCorrelationReplacement",
-  "responseFilters": "",
+  "responseFilters": "text/html",
   "rules": [
     {
       "referenceName": "Siebel_SWEACn",
@@ -163,20 +163,20 @@
         "type": "com.blazemeter.jmeter.correlation.siebel.SiebelRowParamsCorrelationReplacement",
         "regex": "([^&\\\\n]+)"
       }
-  }, {
-    "referenceName" : "__time()",
-    "correlationExtractor" : null,
-    "correlationReplacement" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
-      "regex" : "SWETS"
-    }
-  }, {
-    "referenceName" : "__time()",
-    "correlationExtractor" : null,
-    "correlationReplacement" : {
-      "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
-      "regex" : "SWETS"
-    }
-  } ],
+    }, {
+      "referenceName" : "__time()",
+      "correlationExtractor" : null,
+      "correlationReplacement" : {
+        "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+        "regex" : "SWETS"
+      }
+    }, {
+      "referenceName" : "__time()",
+      "correlationExtractor" : null,
+      "correlationReplacement" : {
+        "type" : "com.blazemeter.jmeter.correlation.core.replacements.RegexCorrelationReplacement",
+        "regex" : "SWETS"
+      }
+    } ],
   "repositoryId": "central"
 }
