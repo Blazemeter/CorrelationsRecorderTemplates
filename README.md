@@ -11,7 +11,7 @@
 
 # About
 
-Correlations Recorder Central Repository its a community where users can share their Correlation Templates to be used, and automatically downloaded into the [Correlation's Recorder JMeter Plugin](https://github.com/Blazemeter/CorrelationRecorder).
+Correlations Recorder Central Repository it is a community where users can share their Correlation Templates to be used, and automatically downloaded into the [Correlation's Recorder JMeter Plugin](https://github.com/Blazemeter/CorrelationRecorder).
 
 # Prerequisites
 
@@ -23,7 +23,7 @@ In order to download, update and share templates you need to:
 
 # Creating Templates
 
-From there, you can either start creating your templates from scratch or, load and edit one from the Central Repository, loaded by default into your machine.
+From there, you can either start creating your templates from scratch or, load and edit one from the Central Repository (loaded by default).
 
 ## Building from Scratch
 
@@ -39,13 +39,12 @@ Here you can use the Template we prepare for you or, just add the Component as i
 
 1. Click in your Test Plan
 1. Follow this route: Add > Non-Test Element > "Correlation Controller"
-1. Select the "Correlation Recorder" Component
 
 ---
 
-From this point onwards, its just about adding Rules by clicking the "Add Button" and, when you are ready, save your Correlation Template.
+From this point onwards, it is just about adding Rules by clicking the "Add Button" and, when you are ready, save your Correlation Template.
 
-## Using one from This Repository
+## Using a template from Central Repository
 
 Loading one from the Central Repository saves you time and effort for the setting up part.
 
@@ -55,7 +54,7 @@ Loading one from the Central Repository saves you time and effort for the settin
   1. If the template's version ain't installed: you must click on install button, before loading it.
   1. If the template's version is installed: click the load button to load it.
 
-Note: If you installed a template that required external dependencies, this will trigger a JMeter reset (or ask you to manually reset other wise). After that, just repeat the process until the point where you can load it, and click the load button.
+Note: If you installed a template that required external dependencies, this will trigger a JMeter reset (otherwise ask you to manually reset). After that, just repeat the process until the point where you can load it, and click the load button.
 
 ---
 
@@ -69,25 +68,31 @@ When it comes to load and share the Correlations Templates, there are some steps
 
 1. Clone the actual repository into your machine
 
-> git clone https://github.com/Blazemeter/CorrelationsRecorderTemplates.git
+ > git clone https://github.com/Blazemeter/CorrelationsRecorderTemplates.git
 
 2. Edit the central-repository.json file 
 
-## If its your first time
+## Add Correlation Template to Central Repository
 
 * Adding the name of the template, follow by a pair of `{}`
 
-	"myTemplate" : {}
+```json
+"myTemplate" : {}
+```
 	
 * Adding a version array inside, with all the versions you want to add
 
-	"myTemplate" : {
-		"versions": ["1.0", "2.0"]
-	}
+```json
+"myTemplate" : {
+	"versions": ["1.0", "2.0"]
+}
+```
 	
-## If you are updating
+## Update Correlation Template on Central Repository
 
-* Just add the new version into the array
+* Just add the **new version** into the array. 
+
+NOTE: Don't modify pre-registered versions, since it could affect the behavior for those users who have downloaded and installed that version.
 
 3. Copy the files for those versions into the same level of that central-repository.json file
 
@@ -120,9 +125,9 @@ At the end, should look like this
 # Some considerations 
 
 1. Remember that, if your template contains dependencies, those must be uploaded into public external cloud were everyone can access without logging in. 
-1. All the versions mentioned in your template **MUST** be in the same level as the central repository (don't create sub folders for any reason)
-1. Don't edit others template but your own
-1. Be nice
+1. All the versions mentioned in your template **MUST** be in the same level as the central repository (don't create sub folders for any reason).
+1. Don't edit others template but your own.
+1. Be nice.
 
 # License
 
