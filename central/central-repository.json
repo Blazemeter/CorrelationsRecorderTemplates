@@ -1,0 +1,5 @@
+{
+  "wordpress" : {
+    "versions" : [ "0.1-alpha" ]
+  }
+}
