@@ -38,7 +38,7 @@ Here you can use the Template we prepare for you or, just add the Component as i
 ### Adding the Component
 
 1. Click in your Test Plan
-1. Follow this route: Add > Non-Test Element > "Correlation Controller"
+1. Follow this route: Add > Non-Test Element > "Correlation Recorder"
 
 ---
 
